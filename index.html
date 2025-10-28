@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cozzmo — Signature Collection</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Cozzmo logo" class="logo" />
+      </div>
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-text">
+          <h1>COZZMO</h1>
+          <p class="lead">Modern Ukrainian tailoring. Elevated comfort. Everyday luxury.</p>
+          <div class="hero-actions">
+            <a href="#shop" class="btn btn-primary">Shop bestsellers</a>
+            <a href="#gallery" class="btn btn-ghost">See the lookbook</a>
+          </div>
+          <p class="micro">Free shipping on orders over 3000 UAH</p>
+        </div>
+
+        <div class="hero-media">
+          <img src="assets/hero-1.jpg" alt="Model wearing Cozzmo set" class="hero-photo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY PRODUCTS -->
+    <section id="shop" class="section shop">
+      <div class="container">
+        <h2 class="section-title">Featured pieces</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/prod-1.jpg" alt="Product 1" />
+            <div class="prod-info">
+              <h3>Signature Tracksuit</h3>
+              <p class="price">₴2,900</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/prod-2.jpg" alt="Product 2" />
+            <div class="prod-info">
+              <h3>Puffed Jacket</h3>
+              <p class="price">₴4,200</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <img src="assets/prod-3.jpg" alt="Product 3" />
+            <div class="prod-info">
+              <h3>Essential Hoodie</h3>
+              <p class="price">₴1,300</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2 class="section-title">Lookbook</h2>
+        <div class="masonry-grid">
+          <img src="assets/gallery-1.jpg" alt="" />
+          <img src="assets/gallery-2.jpg" alt="" />
+          <img src="assets/gallery-3.jpg" alt="" />
+          <img src="assets/gallery-4.jpg" alt="" />
+          <img src="assets/gallery-5.jpg" alt="" />
+          <img src="assets/gallery-6.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>Our studio in Kharkiv</h2>
+          <p>We blend comfort and refinement to create staple pieces designed to be lived in. Every seam is checked by hand and every fabric chosen for durability and feel.</p>
+          <ul class="bullets">
+            <li>Local production</li>
+            <li>Limited drops</li>
+            <li>Care-first materials</li>
+          </ul>
+        </div>
+        <div class="about-img">
+          <img src="assets/about.jpg" alt="Studio image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / CTA -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h3>Wholesale & collaborations</h3>
+          <p>Write to us on Instagram or email for stockist requests and collabs.</p>
+          <a href="https://www.instagram.com/cozzmo_ua/" class="btn btn-primary" target="_blank" rel="noopener">Message on Instagram</a>
+        </div>
+
+        <form class="contact-form" action="#" method="post" autocomplete="off">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@email.com" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="Tell us about your request"></textarea>
+          </label>
+          <button type="submit" class="btn btn-ghost">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <strong>COZZMO</strong> • Est. 2020</div>
+      <div class="socials">
+        <a href="https://www.instagram.com/cozzmo_ua/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
