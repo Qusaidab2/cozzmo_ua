@@ -1,0 +1,194 @@
+/* -------------------------------
+   General / Mobile-first
+---------------------------------*/
+* { box-sizing: border-box; }
+html,body { height:100%; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: #fffaf3;
+  color: #222;
+  line-height: 1.5;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:16px;
+}
+
+/* Container */
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: rgba(255,250,243,0.7);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(44,44,44,0.04);
+}
+.header-row {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 0;
+}
+.logo { height:36px; object-fit:contain; }
+
+/* Nav */
+.nav a {
+  margin-left: 18px;
+  text-decoration:none;
+  color:#222;
+  font-weight:600;
+  font-size:.95rem;
+}
+.nav .cta {
+  padding:8px 12px;
+  border-radius:10px;
+  border:1px solid rgba(34,34,34,0.08);
+  background:#fff;
+}
+
+/* HERO */
+.hero {
+  padding:28px 0 40px;
+}
+.hero-inner {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:18px;
+  align-items:center;
+}
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 8vw, 64px);
+  letter-spacing: 2px;
+  margin-bottom:8px;
+}
+.lead {
+  font-size:1.05rem;
+  margin-bottom:14px;
+  color:#444;
+}
+.hero-actions { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:8px; }
+.btn {
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:.95rem;
+}
+.btn-primary {
+  background: linear-gradient(180deg, #2c2c2c, #1d1d1d);
+  color:#fff;
+  box-shadow: 0 8px 24px rgba(44,44,44,0.12);
+}
+.btn-ghost {
+  background:transparent;
+  border:1px solid rgba(34,34,34,0.08);
+  color:#222;
+}
+
+/* hero image */
+.hero-photo {
+  width:100%;
+  height: auto;
+  border-radius:14px;
+  display:block;
+  box-shadow: 0 18px 40px rgba(20,20,20,0.12);
+}
+
+/* SECTIONS */
+.section { padding:36px 0; }
+.section-title {
+  font-family:'Playfair Display', serif;
+  font-size:1.6rem;
+  margin-bottom:18px;
+}
+
+/* Product grid */
+.product-grid {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:14px;
+}
+.product-card {
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow: 0 8px 20px rgba(30,30,30,0.06);
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:12px;
+}
+.product-card img { width:110px; height:110px; object-fit:cover; border-radius:10px; }
+.prod-info h3 { font-size:1.05rem; margin-bottom:6px; font-weight:700; }
+.price { color:#666; font-weight:600; }
+
+/* Gallery masonry */
+.masonry-grid {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:8px;
+}
+.masonry-grid img {
+  width:100%;
+  display:block;
+  border-radius:10px;
+  height:220px;
+  object-fit:cover;
+}
+
+/* About */
+.about-grid { display:grid; grid-template-columns: 1fr; gap:18px; align-items:center; }
+.about-img img { width:100%; border-radius:12px; height:320px; object-fit:cover; }
+
+/* Contact */
+.contact-grid { display:grid; grid-template-columns: 1fr; gap:18px; }
+.contact-card {
+  background:linear-gradient(180deg,#fff,#fffaf3);
+  padding:20px;
+  border-radius:12px;
+  box-shadow: 0 8px 24px rgba(30,30,30,0.05);
+}
+.contact-form label { display:block; margin-bottom:10px; font-size:.9rem; color:#333; }
+.contact-form input, .contact-form textarea {
+  width:100%;
+  padding:10px 12px;
+  border:1px solid rgba(34,34,34,0.08);
+  border-radius:8px;
+  margin-top:6px;
+  font-size: .95rem;
+}
+
+/* Footer */
+.site-footer {
+  border-top:1px solid rgba(0,0,0,0.04);
+  padding:18px 0;
+  font-size:.9rem;
+  color:#666;
+}
+.footer-row { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+
+/* Bullets */
+.bullets { list-style:none; display:flex; gap:12px; margin-top:12px; padding-left:0; flex-wrap:wrap; }
+.bullets li { background:#fff; padding:8px 12px; border-radius:999px; font-weight:600; box-shadow: 0 6px 18px rgba(0,0,0,0.04); }
+
+/* -------------------------------
+   Desktop adjustments
+---------------------------------*/
+@media(min-width:900px){
+  .hero-inner { grid-template-columns: 1fr 540px; gap:28px; align-items:center; }
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .masonry-grid { grid-template-columns: repeat(3, 1fr); }
+  .about-grid { grid-template-columns: 1fr 420px; }
+  .contact-grid { grid-template-columns: 1fr 420px; align-items:start; }
+}
+
+/* tiny polish */
+a { color:inherit; }
